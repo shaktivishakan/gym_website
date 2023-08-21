@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('imG/gympage1.jpg');
+        font-family: 'Bricolage Grotesque', sans-serif;
+
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 34px;
+        top: 20px;
+    }
+    .left img{
+        width: 100px;
+        filter: invert(100%);
+    }
+    .left div{
+        text-align: center;
+        line-height: 20px;
+        font-size: 18px;
+        font-family: cursive;
+    }
+    .mid {
+        display: block;
+        width: 55%;
+        margin: 25px auto;
+        /* border: 2px solid green; */
+        font-family: 'Bricolage Grotesque', sans-serif;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        /* border: 2px solid yellow; */
+        display: inline-block;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+    }
+    .navbar li a{
+        color: white;
+        font-size: 120%;
+        text-decoration: none;
+        padding: 34px 20px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: rgb(240, 207, 207);
+    }
+    .btn{
+        margin: 25px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(46, 40, 40);
+    }
+    .container{
+        border: 2px solid rgb(209, 239, 209);
+        margin: 106px 890px;
+        padding: 60px;
+        width: 33%;
+        border-radius: 28px;
+    }
+    .form-group input{
+        font-family: 'Bricolage Grotesque', sans-serif;
+        text-align: center;
+        display: block;
+        width: 500px;
+        padding: 1px 1px;
+        border: 2px solid black;
+        margin: 10px auto;
+        font-size: 25px;
+        border-radius: 9px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 100%;
+        margin: 10px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <img src="img/gymlogo.png" alt="">
+            <div>SV<br>Fitness</div>
+        </div>
+        <!-- mid for nav -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </div>
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">email us</button>
+        </div>
+        <div class="container">
+            <h1>Join Now</h1>
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your age">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Gender">
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </header>
+</body>
+
+</html>
